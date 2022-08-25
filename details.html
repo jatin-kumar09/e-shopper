@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Responsive E-Commerce Website</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="./index.html" class="nav_logo">
+                <i class="bx bxs-shopping-bags nav_logo-icon"></i>E-Shopper
+            </a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="./index.html" class="nav_link active_link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./shop.html" class="nav_link ">Shop</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./cart.html" class="nav_link ">Cart</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./blog.html" class="nav_link ">Blog</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./faq.html" class="nav_link ">FAQ's</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./contact.html" class="nav_link active_link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav_close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+
+            <div class="nav_btns">
+                <div class="login_toggle" id="login-button">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="nav_shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart_close" id="cart-close"></i>
+        <h2 class="cart_title-center">My Cart</h2>
+        <div class="cart_container">
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="./img/cart-1.png" alt="" class="cart_img">
+                </div>
+                <div class="cart_details">
+                    <h3 class="cart_title">Windbreaker</h3>
+                    <span class="cart_price">$12</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box"><i class="bx bx-minus"></i></span>
+                            <span class="cart_amount-number">1</span>
+                            <span class="cart_amount-box"><i class="bx bx-plus"></i></span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="./img/cart-2.png" alt="" class="cart_img">
+                </div>
+                <div class="cart_details">
+                    <h3 class="cart_title">Cardigan Hoodie</h3>
+                    <span class="cart_price">$16</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box"><i class="bx bx-minus"></i></span>
+                            <span class="cart_amount-number">1</span>
+                            <span class="cart_amount-box"><i class="bx bx-plus"></i></span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="./img/cart-3.png" alt="" class="cart_img">
+                </div>
+                <div class="cart_details">
+                    <h3 class="cart_title">Cartoon</h3>
+                    <span class="cart_price">$10</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box"><i class="bx bx-minus"></i></span>
+                            <span class="cart_amount-number">1</span>
+                            <span class="cart_amount-box"><i class="bx bx-plus"></i></span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart_prices">
+            <span class="cart_prices-item">3 items</span>
+            <span class="cart_prices-total">$38</span>
+        </div>
+    </div>
+    <div class="login" id="login">
+        <i class="bx bx-x login_close" id="login-close"></i>
+        <h2 class="login_title-center">Login</h2>
+
+        <form action="" class="login_form grid">
+            <div class="login_content">
+                <label for="" class="login_label">Email</label>
+                <input type="email" name="" class="login_input">
+            </div>
+
+            <div class="login_content">
+                <label for="" class="login_label">Password</label>
+                <input type="password" name="" class="login_input">
+            </div>
+
+            <div>
+                <a href="#" class="button">Sign in</a>
+            </div>
+
+            <div>
+                <p class="signup">Not a member? <a href="./registration.html">Sign up now</a></p>
+            </div>
+        </form>
+    </div>
+    <main class="main">
+        <section class="details section container">
+
+            <h2 class="breadcrumb_title">Details Page</h2>
+            <h3 class="breadcrumb_subtitle">Home > <span>Details</span></h3>
+
+            <div class="details_container grid">
+                <div class="product_images grid">
+                    <div class="product_img">
+                        <div class="details_img-tag">New</div>
+                        <img src="./img/details-1.png" alt="">
+                    </div>
+                    <div class="product_img">
+                        <img src="./img/details-2.png" alt="">
+                    </div>
+                    <div class="product_img">
+                        <img src="./img/details-3.png" alt="">
+                    </div>
+                    <div class="product_img">
+                        <img src="./img/details-4.png" alt="">
+                    </div>
+                </div>
+                <div class="product_info">
+                    <p class="details_subtitle">Women > Jacket's</p>
+                    <h3 class="details_title">Windbreaker , Denim - Jacket</h3>
+
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bx-star"></i>
+                        </div>
+                        <span class="reviews_count">40 + Reviews</span>
+                    </div>
+
+                    <div class="details_prices">
+                        <span class="details_price">$29.99</span>
+                        <span class="details_discount">$14.99</span>
+                        <span class="discount_percentage">50% OFF</span>
+                    </div>
+
+                    <div class="details_description">
+                        <h3 class="description_title">Product Details</h3>
+                        <div class="description_details">
+                            <p>Light Gray solid Top, has a boat neck, 3/4 sleeves</p>
+                        </div>
+                    </div>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box"><i class="bx bx-minus"></i></span>
+                            <span class="cart_amount-number">1</span>
+                            <span class="cart_amount-box"><i class="bx bx-plus"></i></span>
+                        </div>
+
+                        <i class="bx bx-heart cart_amount-heart"></i>
+                    </div>
+
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="related_products section">
+            <h2 class="section_title">Related Products</h2>
+            <div class="new_container container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <!--NEW CONTENT 1-->
+                        <div class="new_content swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="./img/new-1.png" alt="" class="new_img">
+                            <h3 class="new_title">Windbreaker Jacket</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">$14.99</span>
+                                <span class="new_discount">$29.99</span>
+                            </div>
+
+                            <a href="./details.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                        <!--NEW CONTENT 2-->
+                        <div class="new_content  swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="./img/new-2.png" alt="" class="new_img">
+                            <h3 class="new_title">Air Jordan Zipper</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">$11.99</span>
+                                <span class="new_discount">$21.99</span>
+                            </div>
+
+                            <a href="./details.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                        <!--NEW CONTENT 3-->
+                        <div class="new_content swiper-slide ">
+                            <div class="new_tag">New</div>
+                            <img src="./img/new-3.png" alt="" class="new_img">
+                            <h3 class="new_title">Fur Jacket</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">$4.99</span>
+                                <span class="new_discount">$9.99</span>
+                            </div>
+
+                            <a href="./details.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                        <!--NEW CONTENT 4-->
+                        <div class="new_content  swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="./img/new-4.png" alt="" class="new_img">
+                            <h3 class="new_title">Fleece Jacket</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">$24.99</span>
+                                <span class="new_discount">$29.99</span>
+                            </div>
+
+                            <a href="./details.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                        <!--NEW CONTENT 5-->
+                        <div class="new_content  swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="./img/new-5.png" alt="" class="new_img">
+                            <h3 class="new_title">Nike Hoodie</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">$7.99</span>
+                                <span class="new_discount">$14.99</span>
+                            </div>
+
+                            <a href="./details.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                        <!--NEW CONTENT 6-->
+                        <div class="new_content  swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="./img/new-6.png" alt="" class="new_img">
+                            <h3 class="new_title">Fleece Jacket</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">$5.99</span>
+                                <span class="new_discount">$12.99</span>
+                            </div>
+
+                            <a href="./details.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer section">
+        <div class="footer_container container grid">
+            <!--FOOTER CONTENT 1-->
+            <div class="footer_content">
+                <a href="#" class="footer_logo">
+                    <i class="bx bxs-shopping-bags footer_logo-icon"></i>e-shopper
+                </a>
+
+                <p class="footer_description">Enjoy the biggest sale <br>of your life.</p>
+
+                <div class="footer_social">
+                    <a href="#" class="footer_social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer_social-link"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer_social-link"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+
+            <!--FOOTER CONTENT 2-->
+            <div class="footer_content">
+                <h3 class="footer_title">About</h3>
+
+                <ul class="footer_links">
+                    <li><a href="./about.html" class="footer_link">About Us</a></li>
+                    <li><a href="#" class="footer_link">Customer Support</a></li>
+                    <li><a href="#" class="footer_link">Support Center</a></li>
+                </ul>
+            </div>
+
+            <!--FOOTER CONTENT 3-->
+            <div class="footer_content">
+                <h3 class="footer_title">Our Services</h3>
+
+                <ul class="footer_links">
+                    <li><a href="#" class="footer_link">Shop</a></li>
+                    <li><a href="#" class="footer_link">Discounts</a></li>
+                    <li><a href="#" class="footer_link">Shipping mode</a></li>
+                </ul>
+            </div>
+
+            <!--FOOTER CONTENT 4-->
+            <div class="footer_content">
+                <h3 class="footer_title">Our Company</h3>
+
+                <ul class="footer_links">
+                    <li><a href="#" class="footer_link">Register</a></li>
+                    <li><a href="./contact.html" class="footer_link">Contact Us</a></li>
+                    <li><a href="./about.html" class="footer_link">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer_copy">&#169;CodeWars. All rights reserved</span>
+    </footer>
+
+    <div class="lightbox">
+        <div class="lightbox_content">
+            <div class="lightbox_close">&times;</div>
+            <img src="./img/details-2.png" alt="" class="lightbox_img">
+            <div class="lightbox_caption">
+                <div class="caption_text">e-shopper</div>
+                <div class="caption_counter"></div>
+            </div>
+        </div>
+
+        <div class="lightbox_controls">
+            <div class="prev_item" onclick="prevItem()"><i class="bx bx-chevron-left"></i></div>
+            <div class="next_item" onclick="nextItem()"><i class="bx bx-chevron-right"></i></div>
+        </div>
+    </div>
+
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup_icon"></i>
+    </a>
+
+
+    <script>
+        const productItem=document.querySelectorAll(".product_img"),
+        totalProduct=productItem.length;
+        console.log(totalProduct);
+
+        lightbox=document.querySelector(".lightbox"),
+        lightboxImg=document.querySelector(".lightbox_img"),
+        lightboxClose=document.querySelector(".lightbox_close"),
+        lightboxCounter=document.querySelector(".caption_counter");
+
+        let itemIndex=0;
+
+        for(let i=0; i<totalProduct; i++){
+            console.log(productItem[i]);
+            productItem[i].addEventListener("click",function(){
+                itemIndex=i;
+                changeItem();
+                toggleLightbox();
+            })
+        }
+
+        function nextItem(){
+            if(itemIndex===totalProduct-1){
+                itemIndex=0;
+            }
+            else{
+                itemIndex++;
+            }
+            changeItem();
+        }
+
+        function prevItem(){
+            if(itemIndex===0){
+                itemIndex=totalProduct-1;
+            }
+            else{
+                itemIndex--;
+            }
+            changeItem();
+        }
+
+        function toggleLightbox() {
+            lightbox.classList.toggle("open");
+        }
+
+        function changeItem() {
+            imgSrc=productItem[itemIndex].querySelector(".product_img img").getAttribute("src");
+            lightboxImg.src=imgSrc;
+            lightboxCounter.innerHTML=(itemIndex+1) + " of " + totalProduct;
+        }
+
+        lightbox.addEventListener("click", function(){
+            if(event.target==lightboxClose || event.target==lightbox){
+                toggleLightbox();
+            }
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-Commerce Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="./index.html" class="nav_logo">
+                <i class="bx bxs-shopping-bags nav_logo-icon"></i>E-Shopper
+            </a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="./index.html" class="nav_link ">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./shop.html" class="nav_link ">Shop</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./cart.html" class="nav_link ">Cart</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./blog.html" class="nav_link active_link">Blog</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./faq.html" class="nav_link ">FAQ's</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./contact.html" class="nav_link ">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav_close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+
+            <div class="nav_btns">
+                <div class="login_toggle" id="login-button">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="nav_shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart_close" id="cart-close"></i>
+        <h2 class="cart_title-center">My Cart</h2>
+        <div class="cart_container">
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="./img/cart-1.png" alt="" class="cart_img">
+                </div>
+                <div class="cart_details">
+                    <h3 class="cart_title">Windbreaker</h3>
+                    <span class="cart_price">$12</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box"><i class="bx bx-minus"></i></span>
+                            <span class="cart_amount-number">1</span>
+                            <span class="cart_amount-box"><i class="bx bx-plus"></i></span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="./img/cart-2.png" alt="" class="cart_img">
+                </div>
+                <div class="cart_details">
+                    <h3 class="cart_title">Cardigan Hoodie</h3>
+                    <span class="cart_price">$16</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box"><i class="bx bx-minus"></i></span>
+                            <span class="cart_amount-number">1</span>
+                            <span class="cart_amount-box"><i class="bx bx-plus"></i></span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="./img/cart-3.png" alt="" class="cart_img">
+                </div>
+                <div class="cart_details">
+                    <h3 class="cart_title">Cartoon</h3>
+                    <span class="cart_price">$10</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box"><i class="bx bx-minus"></i></span>
+                            <span class="cart_amount-number">1</span>
+                            <span class="cart_amount-box"><i class="bx bx-plus"></i></span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart_prices">
+            <span class="cart_prices-item">3 items</span>
+            <span class="cart_prices-total">$38</span>
+        </div>
+    </div>
+    <div class="login" id="login">
+        <i class="bx bx-x login_close" id="login-close"></i>
+        <h2 class="login_title-center">Login</h2>
+
+        <form action="" class="login_form grid">
+            <div class="login_content">
+                <label for="" class="login_label">Email</label>
+                <input type="email" name="" class="login_input">
+            </div>
+
+            <div class="login_content">
+                <label for="" class="login_label">Password</label>
+                <input type="password" name="" class="login_input">
+            </div>
+
+            <div>
+                <a href="#" class="button">Sign in</a>
+            </div>
+
+            <div>
+                <p class="signup">Not a member? <a href="./registration.html">Sign up now</a></p>
+            </div>
+        </form>
+    </div>
+
+    <main class="main">
+        <section class="blog section container">
+            <h2 class="breadcrumb_title">Blog Page</h2>
+            <h3 class="breadcrumb_subtitle">Home > <span>Blog</span></h3>
+
+            <div class="blog_container grid">
+                <div class="blog_post grid">
+                    <img src="./img/blog-1.webp" alt="" class="blog_img">
+
+                    <div class="blog_info">
+                        <p class="blog_details">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam suscipit obcaecat omnis
+                            soluta nobis.
+                        </p>
+                        <h3 class="blog_title">From Now We Are Certified Web...</h3>
+                        <p class="blog_date">By Admin / Jan 12,2022 /</p>
+                        <div class="read_more">
+                            <a href="#" class="button--link button--flex">Read More <i
+                                    class="bx bx-right-arrow-alt button_icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_post grid">
+                    <img src="./img/blog-2.webp" alt="" class="blog_img">
+
+                    <div class="blog_info">
+                        <p class="blog_details">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam suscipit obcaecat omnis
+                            soluta nobis.
+                        </p>
+                        <h3 class="blog_title">From Now We Are Certified Web...</h3>
+                        <p class="blog_date">By Admin / Jan 12,2022 /</p>
+                        <div class="read_more">
+                            <a href="#" class="button--link button--flex">Read More <i
+                                    class="bx bx-right-arrow-alt button_icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_post grid">
+                    <img src="./img/blog-1.webp" alt="" class="blog_img">
+
+                    <div class="blog_info">
+                        <p class="blog_details">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam suscipit obcaecat omnis
+                            soluta nobis.
+                        </p>
+                        <h3 class="blog_title">From Now We Are Certified Web...</h3>
+                        <p class="blog_date">By Admin / Jan 12,2022 /</p>
+                        <div class="read_more">
+                            <a href="#" class="button--link button--flex">Read More <i
+                                    class="bx bx-right-arrow-alt button_icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <i class="bx bx-chevron-left pagination_icon"></i>
+
+                <span class="current">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>&middot; &middot; &middot;</span>
+                <span>9</span>
+
+                <i class="bx bx-chevron-right pagination_icon"></i>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer_container container grid">
+            <!--FOOTER CONTENT 1-->
+            <div class="footer_content">
+                <a href="#" class="footer_logo">
+                    <i class="bx bxs-shopping-bags footer_logo-icon"></i>e-shopper
+                </a>
+
+                <p class="footer_description">Enjoy the biggest sale <br>of your life.</p>
+
+                <div class="footer_social">
+                    <a href="#" class="footer_social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer_social-link"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer_social-link"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+
+            <!--FOOTER CONTENT 2-->
+            <div class="footer_content">
+                <h3 class="footer_title">About</h3>
+
+                <ul class="footer_links">
+                    <li><a href="#" class="footer_link">About Us</a></li>
+                    <li><a href="#" class="footer_link">Customer Support</a></li>
+                    <li><a href="#" class="footer_link">Support Center</a></li>
+                </ul>
+            </div>
+
+            <!--FOOTER CONTENT 3-->
+            <div class="footer_content">
+                <h3 class="footer_title">Our Services</h3>
+
+                <ul class="footer_links">
+                    <li><a href="#" class="footer_link">Shop</a></li>
+                    <li><a href="#" class="footer_link">Discounts</a></li>
+                    <li><a href="#" class="footer_link">Shipping mode</a></li>
+                </ul>
+            </div>
+
+            <!--FOOTER CONTENT 4-->
+            <div class="footer_content">
+                <h3 class="footer_title">Our Company</h3>
+
+                <ul class="footer_links">
+                    <li><a href="#" class="footer_link">Register</a></li>
+                    <li><a href="#" class="footer_link">Contact Us</a></li>
+                    <li><a href="#" class="footer_link">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer_copy">&#169;CodeWars. All rights reserved</span>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup_icon"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

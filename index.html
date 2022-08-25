@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" class="js-color-style" href="assets/css/colors/color-1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Responsive E-Commerce Website</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="./index.html" class="nav_logo">
+                <i class="bx bxs-shopping-bags nav_logo-icon"></i>E-Shopper
+            </a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="./index.html" class="nav_link active_link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./shop.html" class="nav_link ">Shop</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link ">Cart</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./blog.html" class="nav_link ">Blog</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./faq.html" class="nav_link ">FAQ's</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./contact.html" class="nav_link ">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav_close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+
+            <div class="nav_btns">
+                <div class="login_toggle" id="login-button">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="nav_shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart_close" id="cart-close"></i>
+        <h2 class="cart_title-center">My Cart</h2>
+        <div class="cart_container">
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="./img/cart-1.png" alt="" class="cart_img">
+                </div>
+                <div class="cart_details">
+                    <h3 class="cart_title">Windbreaker</h3>
+                    <span class="cart_price">$12</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box"><i class="bx bx-minus"></i></span>
+                            <span class="cart_amount-number">1</span>
+                            <span class="cart_amount-box"><i class="bx bx-plus"></i></span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="./img/cart-2.png" alt="" class="cart_img">
+                </div>
+                <div class="cart_details">
+                    <h3 class="cart_title">Cardigan Hoodie</h3>
+                    <span class="cart_price">$16</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box"><i class="bx bx-minus"></i></span>
+                            <span class="cart_amount-number">1</span>
+                            <span class="cart_amount-box"><i class="bx bx-plus"></i></span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="./img/cart-3.png" alt="" class="cart_img">
+                </div>
+                <div class="cart_details">
+                    <h3 class="cart_title">Cartoon</h3>
+                    <span class="cart_price">$10</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box"><i class="bx bx-minus"></i></span>
+                            <span class="cart_amount-number">1</span>
+                            <span class="cart_amount-box"><i class="bx bx-plus"></i></span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart_prices">
+            <span class="cart_prices-item">3 items</span>
+            <span class="cart_prices-total">$38</span>
+        </div>
+    </div>
+    <div class="login" id="login">
+        <i class="bx bx-x login_close" id="login-close"></i>
+        <h2 class="login_title-center">Login</h2>
+
+        <form action="" class="login_form grid">
+            <div class="login_content">
+                <label for="" class="login_label">Email</label>
+                <input type="email" name="" class="login_input">
+            </div>
+
+            <div class="login_content">
+                <label for="" class="login_label">Password</label>
+                <input type="password" name="" class="login_input">
+            </div>
+
+            <div>
+                <a href="#" class="button">Sign in</a>
+            </div>
+
+            <div>
+                <p class="signup">Not a member? <a href="./registration.html">Sign up now</a></p>
+            </div>
+        </form>
+    </div>
+    <main class="main">
+        <section class="home container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="home_content grid">
+                            <div class="home_group">
+                                <img src="./img/slide-2.png" alt="" class="home_img">
+                                <div class="home_indicator"></div>
+                                <div class="home_details-img">
+                                    <h4 class="home_details-title">The "Cardigan"</h4>
+                                    <span class="home_details-subtitle">Woolen</span>
+                                </div>
+                            </div>
+                            <div class="home_data">
+                                <div class="home_subtitle">#1 TRENDING ITEM</div>
+                                <h1 class="home_title">ORIGINAL <br> IS NEVER <br> FINISHED!!</h1>
+                                <p class="home_description">This is a place of hope, meaning and purpose. Visit
+                                    and become a part of something bigger - a movement that is changing lives.
+                                </p>
+
+                                <div class="home_buttons">
+                                    <a href="./details.html" class="button" id="buy-button">Buy Now</a>
+                                    <a href="./details.html" class="button--link button--flex">View Details <i
+                                            class="bx bx-right-arrow-alt button_icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="home_content grid">
+                            <div class="home_group">
+                                <img src="./img/slide-3.png" alt="" class="home_img">
+                                <div class="home_indicator"></div>
+                                <div class="home_details-img">
+                                    <h4 class="home_details-title">Jqueezy</h4>
+                                    <span class="home_details-subtitle">Ski Suit</span>
+                                </div>
+                            </div>
+                            <div class="home_data">
+                                <div class="home_subtitle">#2 Top Best Duo</div>
+                                <h1 class="home_title">FALL <br> WINTER <br> 2022</h1>
+                                <p class="home_description">A specialist label creating luxury essentials.
+                                    Ethically crafted with an unwavering commitment to exceptional quality.</p>
+
+                                <div class="home_buttons">
+                                    <a href="./details.html" class="button">Buy Now</a>
+                                    <a href="./details.html" class="button--link button--flex">View Details <i
+                                            class="bx bx-right-arrow-alt button_icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="home_content grid">
+                            <div class="home_group">
+                                <img src="./img/slide-1.png" alt="" class="home_img">
+                                <div class="home_indicator"></div>
+                                <div class="home_details-img">
+                                    <h4 class="home_details-title">Jurry</h4>
+                                    <span class="home_details-subtitle">Zipper</span>
+                                </div>
+                            </div>
+                            <div class="home_data">
+                                <div class="home_subtitle">#3 TRENDING ITEM</div>
+                                <h1 class="home_title">SALE 20% <br> OFF ON <br> EVERYTHING</h1>
+                                <p class="home_description">A specialist label creating luxury essentials.
+                                    Ethically crafted with an unwavering commitment to exceptional quality.</p>
+
+                                <div class="home_buttons">
+                                    <a href="./details.html" class="button">Buy Now</a>
+                                    <a href="./details.html" class="button--link button--flex">View Details <i
+                                            class="bx bx-right-arrow-alt button_icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="discount section">
+            <div class="discount_container container grid">
+                <img src="./img/discount.png" alt="" class="discount_img">
+                <div class="discount_data">
+                    <h2 class="discount_title">50% Discount <br> On New Products</h2>
+                    <a href="#" class="button">Go to new</a>
+                </div>
+            </div>
+        </section>
+        <section class="new section">
+            <h2 class="section_title">New Arrivals</h2>
+            <div class="new_container container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <!--NEW CONTENT 1-->
+                        <div class="new_content swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="./img/new-1.png" alt="" class="new_img">
+                            <h3 class="new_title">Windbreaker Jacket</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">$14.99</span>
+                                <span class="new_discount">$29.99</span>
+                            </div>
+
+                            <a href="./details.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                        <!--NEW CONTENT 2-->
+                        <div class="new_content  swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="./img/new-2.png" alt="" class="new_img">
+                            <h3 class="new_title">Air Jordan Zipper</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">$11.99</span>
+                                <span class="new_discount">$21.99</span>
+                            </div>
+
+                            <a href="./details.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                        <!--NEW CONTENT 3-->
+                        <div class="new_content swiper-slide ">
+                            <div class="new_tag">New</div>
+                            <img src="./img/new-3.png" alt="" class="new_img">
+                            <h3 class="new_title">Fur Jacket</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">$4.99</span>
+                                <span class="new_discount">$9.99</span>
+                            </div>
+
+                            <a href="./details.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                        <!--NEW CONTENT 4-->
+                        <div class="new_content  swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="./img/new-4.png" alt="" class="new_img">
+                            <h3 class="new_title">Fleece Jacket</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">$24.99</span>
+                                <span class="new_discount">$29.99</span>
+                            </div>
+
+                            <a href="./details.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                        <!--NEW CONTENT 5-->
+                        <div class="new_content  swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="./img/new-5.png" alt="" class="new_img">
+                            <h3 class="new_title">Nike Hoodie</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">$7.99</span>
+                                <span class="new_discount">$14.99</span>
+                            </div>
+
+                            <a href="./details.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                        <!--NEW CONTENT 6-->
+                        <div class="new_content  swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="./img/new-6.png" alt="" class="new_img">
+                            <h3 class="new_title">Fleece Jacket</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">$5.99</span>
+                                <span class="new_discount">$12.99</span>
+                            </div>
+
+                            <a href="./details.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="steps section container">
+            <div class="steps_bg">
+                <h2 class="section_title">How to Order Products <br> from e-shopper</h2>
+
+                <div class="steps_container grid">
+                    <!--STEP CARD 1-->
+                    <div class="steps_card">
+                        <div class="steps_card-number">01</div>
+                        <h3 class="steps_card-title">Choose Products</h3>
+                        <p class="steps_card-description">
+                            We have several varieties products you can choose from.
+                        </p>
+                    </div>
+
+                    <!--STEP CARD 2-->
+                    <div class="steps_card">
+                        <div class="steps_card-number">02</div>
+                        <h3 class="steps_card-title">Place an order</h3>
+                        <p class="steps_card-description">
+                            Once your order is set,we move to the next step which is the shipping.
+                        </p>
+                    </div>
+
+                    <!--STEP CARD 3-->
+                    <div class="steps_card">
+                        <div class="steps_card-number">03</div>
+                        <h3 class="steps_card-title">Get Order Delivery</h3>
+                        <p class="steps_card-description">
+                            Our Delivery process is easy, you receive the order direct to yout home.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter section">
+            <div class="newsletter_container container">
+                <h2 class="section_title">Our Newletter</h2>
+                <p class="newsletter_description">
+                    Promotions new products and sales. Directly to your inbox
+                </p>
+
+                <form action="" class="newsletter_form">
+                    <input type="text" placeholder="Enter your email" class="newsletter_input">
+                    <button class="button">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer section">
+        <div class="footer_container container grid">
+            <!--FOOTER CONTENT 1-->
+            <div class="footer_content">
+                <a href="#" class="footer_logo">
+                    <i class="bx bxs-shopping-bags footer_logo-icon"></i>e-shopper
+                </a>
+
+                <p class="footer_description">Enjoy the biggest sale <br>of your life.</p>
+
+                <div class="footer_social">
+                    <a href="#" class="footer_social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer_social-link"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer_social-link"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+
+            <!--FOOTER CONTENT 2-->
+            <div class="footer_content">
+                <h3 class="footer_title">About</h3>
+
+                <ul class="footer_links">
+                    <li><a href="./about.html" class="footer_link">About Us</a></li>
+                    <li><a href="#" class="footer_link">Customer Support</a></li>
+                    <li><a href="#" class="footer_link">Support Center</a></li>
+                </ul>
+            </div>
+
+            <!--FOOTER CONTENT 3-->
+            <div class="footer_content">
+                <h3 class="footer_title">Our Services</h3>
+
+                <ul class="footer_links">
+                    <li><a href="#" class="footer_link">Shop</a></li>
+                    <li><a href="#" class="footer_link">Discounts</a></li>
+                    <li><a href="#" class="footer_link">Shipping mode</a></li>
+                </ul>
+            </div>
+
+            <!--FOOTER CONTENT 4-->
+            <div class="footer_content">
+                <h3 class="footer_title">Our Company</h3>
+
+                <ul class="footer_links">
+                    <li><a href="#" class="footer_link">Register</a></li>
+                    <li><a href="./contact.html" class="footer_link">Contact Us</a></li>
+                    <li><a href="./about.html" class="footer_link">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer_copy">&#169;CodeWars. All rights reserved</span>
+    </footer>
+
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup_icon"></i>
+    </a>
+
+    <div class="style_switcher">
+        <div class="style_switcher-toggler s_icon">
+            <i class="bx bxs-cog bx-spin"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="theme_colors js-theme-colors">
+            <button type="button" data-js-theme-color="color-1" class="js-theme-color-item theme_button color-1">
+                <i class="bx bx-check"></i>
+            </button>
+            <button type="button" data-js-theme-color="color-2" class="js-theme-color-item theme_button color-2">
+                <i class="bx bx-check"></i>
+            </button>
+            <button type="button" data-js-theme-color="color-3" class="js-theme-color-item theme_button color-3">
+                <i class="bx bx-check"></i>
+            </button>
+            <button type="button" data-js-theme-color="color-4" class="js-theme-color-item theme_button color-4">
+                <i class="bx bx-check"></i>
+            </button>
+            <button type="button" data-js-theme-color="color-5" class="js-theme-color-item theme_button color-5">
+                <i class="bx bx-check"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
